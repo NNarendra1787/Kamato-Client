@@ -1,0 +1,628 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Side Ke CSS propretys */
+
+/* .nav-menu{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: space-around;
+}
+.nav-item{
+    line-height: 40px;
+    margin-right: 1rem;
+}
+.nav-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+  }
+
+  .nav-item:hover::after{
+    width: 40%;
+  }
+
+  .nav-item .active{
+    color: purple;
+  }
+
+  .nav-icon{
+    display: block;
+  }
+
+  @media screen and (max-width: 1400px){
+    dropdown label,
+    .dropdown i{
+      display: none;
+    }
+ 
+  
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 98%;
+      border-top: 1px solid white;
+      position: absolute;
+      top: 80px;
+      left: -110%;
+      opacity: 1;
+    }
+    .nav-menu.active {
+      background-color: #f3e4e4;
+      min-width: 370px;
+      left: 0px;
+      opacity: 1;
+      z-index: 1;
+      padding-left: 0;
+      margin: 0;
+    }
+    .nav-item .active {
+      color: black;
+      border: block;
+    }
+    .nav-links {
+       padding: 0;
+      width: 100%;
+      display: table;
+      margin-bottom: 10px;
+    }
+    .nav-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: blue;
+    }
+   
+    .nav-item
+    {
+      line-height: 20px;
+      margin: 10px;
+    }
+  } */
+
+/* .duckduck{
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 10px;
+} */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 172px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: greenyellow;
+}
+
+
+.person img {
+    height: 82px;
+}
+
+/* Navbar Top  */
+.navbarTop {
+    display: flex;
+    /* border: 1px solid red; */
+    box-shadow: 0px 3px 2px 2px grey;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 2px;
+    background-color: white;
+
+}
+
+.NavPart {
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
+    align-items: center;
+}
+
+.dollers {
+    border: 1px solid grey;
+    padding: 5px 26px;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+
+.person,
+.Market {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Market p {
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+
+.person img {
+    height: 50px;
+}
+
+/* Navbar Side */
+.NavbarSide {
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0px 15px;
+    width: 20vw;
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    z-index: 5;
+    border-radius: 10px;
+    box-shadow: 4px 0px 6px 0px grey;
+    overflow-y: scroll;
+}
+
+.emoji {
+    height: 40px;
+}
+
+.EmoPart {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid;
+    width: 13vw;
+    border: none;
+}
+
+.TwoPara p span {
+    color: orange;
+    /* line-break: 1rem; */
+    white-space: 30px;
+    /* font-size: 18px; */
+}
+
+.TwoPara p {
+    color: orange;
+    font-weight: bold;
+}
+
+.dop {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: none;
+}
+
+.no15,
+.no14,
+.no13,
+.no12,
+.no11,
+.no1,
+.no2 {
+    display: flex;
+    padding: 8px 3px;
+}
+
+.no1 i,
+.no2 i,
+.no11 i,
+.no12 i,
+.no13 i,
+.no14 i,
+.no15 i {
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+}
+
+.right-icon {
+    margin-left: 10px;
+}
+
+/* Chart from hear */
+
+.AllChartPart {
+    display: flex;
+    flex-direction: column;
+    width: 78vw;
+    position: relative;
+    left: 300px;
+}
+
+.FirstThree {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 10px;
+}
+
+.Chart1,
+.Chart2,
+.Chart3,
+.Part4 {
+    width: 18vw;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid purple; */
+    background-color: white;
+    padding: 5px 12px;
+    height: 370px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    box-shadow: 4px 13px 23px 0px grey;
+}
+
+.Part4 img {
+    height: 200px;
+}
+
+.Chart4UpPart {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Chart4SecondPart {
+    display: flex;
+    flex-direction: column;
+    width: 32vw;
+}
+
+.Chart4Borderpart {
+    border: 1px solid grey;
+    padding: 12px 3px;
+    border-radius: 12px;
+}
+
+.Chart4WalaPart {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    background-color: white;
+    padding: 12px 3px;
+    margin: 26px 3px;
+    width: 74vw;
+    justify-content: space-between;
+    position: relative;
+    left: 33px;
+    box-shadow: 4px 13px 23px 0px grey;
+    border-radius: 12px;
+
+}
+
+.Chart4Main {
+    width: 40vw;
+}
+
+h4 span {
+    color: gold;
+}
+
+.reuser {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.Mainreuser {
+    display: flex;
+    align-items: center;
+}
+
+.Mainreuser h6 {
+    position: relative;
+    top: 5px;
+    left: 20px;
+
+}
+
+.mystar {
+    color: gold;
+}
+
+.ReviewRight {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Chart5FullPart {
+    width: 40vw;
+}
+
+.Chart5MainPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 74vw;
+    box-shadow: 4px 13px 23px 0px grey;
+    background-color: white;
+    border-radius: 12px;
+    position: relative;
+    left: 33px;
+    gap: 1rem;
+}
+
+.Chart5MidPart {
+    width: 36vw;
+}
+
+.Chart5MidPart p {
+    width: 30vw;
+    font-size: 14px;
+    text-align: justify;
+    position: relative;
+    left: 40px;
+}
+
+.Dashbord-name {
+    text-align: left;
+    position: relative;
+    left: 342px;
+    top: 20px;
+}
+
+.Chodna {
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 480px;
+    margin: 12px 6px;
+}
+
+#date,
+#Timing,
+#Optional {
+    width: 15vw;
+    height: 30px;
+}
+
+
+/* .Chart1 {
+    width: 20vw;
+    box-sizing: border-box;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    border-radius: 15px;
+    box-shadow: 2px 5px 6px 5px grey;
+    grid-column: 1/5;
+}
+
+.Chart2 {
+    width: 20vw;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    border: 1px solid purple;
+    border-radius: 15px;
+    box-shadow: 2px 5px 6px 5px grey;
+    grid-column: 5/10;
+
+}
+
+.Chart3 {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    width: 20vw;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 2px 5px 6px 5px grey;
+    grid-column: 10/16;
+}
+
+.Part4 {
+    border: 1px solid purple;
+    border-radius: 15px;
+    box-shadow: 2px 5px 6px 5px grey;
+    width: 17vw;
+    grid-column: 16/20;
+}
+
+.Part4 img {
+    height: 200px;
+
+} */
+
+
+/* DashBoard */
+.Dashboard {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16, 2fr)); */
+    background-color: rgb(183 181 181 / 29%);
+    grid-gap: 1rem;
+    width: 98vw;
+    height: 100vh;
+}
+
+
+.navbarTop {
+    /* grid-column: 7/ span 15; */
+    width: 86.1vw;
+    position: relative;
+    left: 191px;
+}
+
+.RightSide {
+    height: 100vh;
+    width: 98vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+p span {
+    font-weight: bold;
+}
+
+/* h6 {
+    text-align: center;
+} */
+
+
+/* Subscription */
+.MainBox {
+    background-color: rgb(219, 219, 219);
+    height: 100vh;
+    /* display: flex; */
+}
+
+.MainBox h4,
+.MainBox h6 {
+    position: relative;
+    right: 90px;
+    width: 60vw;
+}
+
+.TopLinks {
+    display: flex;
+    width: 60vw;
+    justify-content: center;
+    gap: 1rem
+}
+
+.BilingOrder {
+    border-radius: 10px;
+    background-color: white;
+    width: 76vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0px auto;
+    position: relative;
+    left: 146px;
+}
+
+.Biling {
+    text-align: left;
+    margin: 5px 30px;
+    padding: 12px 3px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.upperPart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom--button {
+    border: 1px solid rgb(153, 251, 7);
+    background-color: white;
+    border-radius: 6px;
+    color: rgb(152, 247, 10);
+    width: 12vw;
+    position: relative;
+    top: 15px;
+    right: 15px;
+    padding: 0px;
+    height: 45px;
+}
+
+.BilingDataBox {
+    display: flex;
+    flex-direction: column;
+    width: 42vw;
+    border-radius: 12px;
+    box-shadow: 5px 3px 3px 3px grey;
+    margin: 0px 30px;
+
+}
+
+.BilingDataBox div {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    margin: 0px 0px;
+    position: relative;
+    left: 0px;
+    box-sizing: border-box;
+}
+
+.BilingDataBox div p {
+    text-align: justify;
+    font-size: 14px;
+    padding: 5px 0px;
+    margin: 0px 12px;
+}
+
+.two1 {
+    position: relative;
+    left: 220px;
+}
+
+.two2 {
+    position: relative;
+    left: 250px;
+}
+
+.two3 {
+    position: relative;
+    left: 175px;
+}
+
+.two4,
+.two5 {
+    position: relative;
+    left: 200px;
+}
+
+.Databata {
+    padding: 20px 10px;
+}
+
+.Databata h6 {
+    text-align: left;
+}
+
+.lastBtn {
+    display: flex;
+    padding: 10px 0px;
+    gap: 1rem;
+}
+
+.bottom--button-1,
+.bottom--button-2 {
+    border: 1px solid rgb(153, 251, 7);
+    background-color: rgb(104, 151, 34);
+    border-radius: 6px;
+    color: white;
+    width: 12vw;
+    padding: 0px, 15px;
+    height: 45px;
+    position: relative;
+    left: 20px;
+
+}
+
+.h6 {
+    text-align: left;
+}
+
+
+/* ReDashboard Design */
